@@ -1,4 +1,4 @@
-external toJsUnsafe : 'a => 'b = "%identity";
+external toJsUnsafe: 'a => 'b = "%identity";
 
 let unwrapValue =
   fun
@@ -20,14 +20,14 @@ let unwrapValue =
 
 module Colors = {
   module Common = {
-    [@bs.module "material-ui/colors/common"]
-    external commonExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/common"]
+    external commonExt: Js.Dict.t(string) = "default";
     let black: string = Js.Dict.unsafeGet(commonExt, "black");
     let white: string = Js.Dict.unsafeGet(commonExt, "white");
   };
   module Red = {
-    [@bs.module "material-ui/colors/red"]
-    external redExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/red"]
+    external redExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(redExt, "50");
     let c100: string = Js.Dict.unsafeGet(redExt, "100");
     let c200: string = Js.Dict.unsafeGet(redExt, "200");
@@ -44,8 +44,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(redExt, "A700");
   };
   module Pink = {
-    [@bs.module "material-ui/colors/pink"]
-    external pinkExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/pink"]
+    external pinkExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(pinkExt, "50");
     let c100: string = Js.Dict.unsafeGet(pinkExt, "100");
     let c200: string = Js.Dict.unsafeGet(pinkExt, "200");
@@ -62,8 +62,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(pinkExt, "A700");
   };
   module Purple = {
-    [@bs.module "material-ui/colors/purple"]
-    external purpleExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/purple"]
+    external purpleExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(purpleExt, "50");
     let c100: string = Js.Dict.unsafeGet(purpleExt, "100");
     let c200: string = Js.Dict.unsafeGet(purpleExt, "200");
@@ -80,8 +80,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(purpleExt, "A700");
   };
   module DeepPurple = {
-    [@bs.module "material-ui/colors/deepPurple"]
-    external deepPurpleExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/deepPurple"]
+    external deepPurpleExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(deepPurpleExt, "50");
     let c100: string = Js.Dict.unsafeGet(deepPurpleExt, "100");
     let c200: string = Js.Dict.unsafeGet(deepPurpleExt, "200");
@@ -98,8 +98,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(deepPurpleExt, "A700");
   };
   module Indigo = {
-    [@bs.module "material-ui/colors/indigo"]
-    external indigoExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/indigo"]
+    external indigoExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(indigoExt, "50");
     let c100: string = Js.Dict.unsafeGet(indigoExt, "100");
     let c200: string = Js.Dict.unsafeGet(indigoExt, "200");
@@ -116,8 +116,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(indigoExt, "A700");
   };
   module Blue = {
-    [@bs.module "material-ui/colors/blue"]
-    external blueExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/blue"]
+    external blueExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(blueExt, "50");
     let c100: string = Js.Dict.unsafeGet(blueExt, "100");
     let c200: string = Js.Dict.unsafeGet(blueExt, "200");
@@ -134,8 +134,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(blueExt, "A700");
   };
   module LightBlue = {
-    [@bs.module "material-ui/colors/lightBlue"]
-    external lightBlueExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/lightBlue"]
+    external lightBlueExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(lightBlueExt, "50");
     let c100: string = Js.Dict.unsafeGet(lightBlueExt, "100");
     let c200: string = Js.Dict.unsafeGet(lightBlueExt, "200");
@@ -152,8 +152,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(lightBlueExt, "A700");
   };
   module Cyan = {
-    [@bs.module "material-ui/colors/cyan"]
-    external cyanExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/cyan"]
+    external cyanExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(cyanExt, "50");
     let c100: string = Js.Dict.unsafeGet(cyanExt, "100");
     let c200: string = Js.Dict.unsafeGet(cyanExt, "200");
@@ -170,8 +170,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(cyanExt, "A700");
   };
   module Teal = {
-    [@bs.module "material-ui/colors/teal"]
-    external tealExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/teal"]
+    external tealExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(tealExt, "50");
     let c100: string = Js.Dict.unsafeGet(tealExt, "100");
     let c200: string = Js.Dict.unsafeGet(tealExt, "200");
@@ -188,8 +188,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(tealExt, "A700");
   };
   module Green = {
-    [@bs.module "material-ui/colors/green"]
-    external greenExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/green"]
+    external greenExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(greenExt, "50");
     let c100: string = Js.Dict.unsafeGet(greenExt, "100");
     let c200: string = Js.Dict.unsafeGet(greenExt, "200");
@@ -206,8 +206,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(greenExt, "A700");
   };
   module LightGreen = {
-    [@bs.module "material-ui/colors/lightGreen"]
-    external lightGreenExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/lightGreen"]
+    external lightGreenExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(lightGreenExt, "50");
     let c100: string = Js.Dict.unsafeGet(lightGreenExt, "100");
     let c200: string = Js.Dict.unsafeGet(lightGreenExt, "200");
@@ -224,8 +224,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(lightGreenExt, "A700");
   };
   module Lime = {
-    [@bs.module "material-ui/colors/lime"]
-    external limeExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/lime"]
+    external limeExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(limeExt, "50");
     let c100: string = Js.Dict.unsafeGet(limeExt, "100");
     let c200: string = Js.Dict.unsafeGet(limeExt, "200");
@@ -242,8 +242,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(limeExt, "A700");
   };
   module Yellow = {
-    [@bs.module "material-ui/colors/yellow"]
-    external yellowExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/yellow"]
+    external yellowExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(yellowExt, "50");
     let c100: string = Js.Dict.unsafeGet(yellowExt, "100");
     let c200: string = Js.Dict.unsafeGet(yellowExt, "200");
@@ -260,8 +260,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(yellowExt, "A700");
   };
   module Amber = {
-    [@bs.module "material-ui/colors/amber"]
-    external amberExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/amber"]
+    external amberExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(amberExt, "50");
     let c100: string = Js.Dict.unsafeGet(amberExt, "100");
     let c200: string = Js.Dict.unsafeGet(amberExt, "200");
@@ -278,8 +278,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(amberExt, "A700");
   };
   module Orange = {
-    [@bs.module "material-ui/colors/orange"]
-    external orangeExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/orange"]
+    external orangeExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(orangeExt, "50");
     let c100: string = Js.Dict.unsafeGet(orangeExt, "100");
     let c200: string = Js.Dict.unsafeGet(orangeExt, "200");
@@ -296,8 +296,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(orangeExt, "A700");
   };
   module DeepOrange = {
-    [@bs.module "material-ui/colors/deepOrange"]
-    external deepOrangeExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/deepOrange"]
+    external deepOrangeExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(deepOrangeExt, "50");
     let c100: string = Js.Dict.unsafeGet(deepOrangeExt, "100");
     let c200: string = Js.Dict.unsafeGet(deepOrangeExt, "200");
@@ -314,8 +314,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(deepOrangeExt, "A700");
   };
   module Brown = {
-    [@bs.module "material-ui/colors/brown"]
-    external brownExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/brown"]
+    external brownExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(brownExt, "50");
     let c100: string = Js.Dict.unsafeGet(brownExt, "100");
     let c200: string = Js.Dict.unsafeGet(brownExt, "200");
@@ -332,8 +332,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(brownExt, "A700");
   };
   module Grey = {
-    [@bs.module "material-ui/colors/grey"]
-    external greyExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/grey"]
+    external greyExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(greyExt, "50");
     let c100: string = Js.Dict.unsafeGet(greyExt, "100");
     let c200: string = Js.Dict.unsafeGet(greyExt, "200");
@@ -350,8 +350,8 @@ module Colors = {
     let a700: string = Js.Dict.unsafeGet(greyExt, "A700");
   };
   module BlueGrey = {
-    [@bs.module "material-ui/colors/blueGrey"]
-    external blueGreyExt : Js.Dict.t(string) = "default";
+    [@bs.module "@material-ui/core/colors/blueGrey"]
+    external blueGreyExt: Js.Dict.t(string) = "default";
     let c50: string = Js.Dict.unsafeGet(blueGreyExt, "50");
     let c100: string = Js.Dict.unsafeGet(blueGreyExt, "100");
     let c200: string = Js.Dict.unsafeGet(blueGreyExt, "200");
@@ -426,10 +426,10 @@ module AppBar = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/AppBar/AppBar"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/AppBar"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~color: string=?,
@@ -502,10 +502,10 @@ module Avatar = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Avatar/Avatar"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Avatar"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~alt: string=?,
       ~childrenClassName: string=?,
@@ -586,10 +586,10 @@ module Backdrop = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Modal/Backdrop"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Backdrop"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~invisible: bool=?,
@@ -684,10 +684,10 @@ module Badge = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Badge/Badge"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Badge"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~badgeContent: ReasonReact.reactElement,
       ~className: string=?,
@@ -766,10 +766,10 @@ module BottomNavigationAction = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/BottomNavigation/BottomNavigationAction"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/BottomNavigationAction"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~icon: ReasonReact.reactElement=?,
@@ -905,10 +905,10 @@ module BottomNavigation = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/BottomNavigation/BottomNavigation"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/BottomNavigation"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~onChange: ReactEvent.Form.t => unit=?,
@@ -974,10 +974,10 @@ module ButtonBase = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/ButtonBase/ButtonBase"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ButtonBase"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~buttonRef: ReasonReact.reactElement=?,
       ~centerRipple: bool=?,
@@ -1156,10 +1156,10 @@ module Button = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Button/Button"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Button"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~color: string=?,
@@ -1301,10 +1301,10 @@ module CardActions = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Card/CardActions"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/CardActions"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~disableActionSpacing: bool=?,
@@ -1358,10 +1358,10 @@ module CardContent = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Card/CardContent"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/CardContent"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_1=?,
@@ -1431,10 +1431,10 @@ module CardHeader = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Card/CardHeader"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/CardHeader"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~action: ReasonReact.reactElement=?,
       ~avatar: ReasonReact.reactElement=?,
@@ -1504,10 +1504,10 @@ module CardMedia = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Card/CardMedia"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/CardMedia"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_q=?,
@@ -1547,10 +1547,10 @@ module CardMedia = {
 };
 
 module Card = {
-  [@bs.module "material-ui/Card/Card"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Card"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~raised: bool=?,
       ~className: string=?,
@@ -1632,10 +1632,10 @@ module Checkbox = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Checkbox/Checkbox"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Checkbox"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~checked: 'union_o=?,
       ~checkedIcon: ReasonReact.reactElement=?,
@@ -1704,6 +1704,12 @@ module Checkbox = {
 };
 
 module Chip = {
+  [@bs.deriving jsConverter]
+  type color = [
+    | [@bs.as "primary"] `Primary
+    | [@bs.as "secondary"] `Secondary
+    | [@bs.as "inherit"] `Inherit
+  ];
   module Classes = {
     type classesType =
       | Root(string)
@@ -1711,6 +1717,8 @@ module Chip = {
       | Deletable(string)
       | Avatar(string)
       | AvatarChildren(string)
+      | ColorPrimary(string)
+      | ColorSecondary(string)
       | Label(string)
       | DeleteIcon(string);
     type t = list(classesType);
@@ -1721,6 +1729,8 @@ module Chip = {
       | Deletable(_) => "deletable"
       | Avatar(_) => "avatar"
       | AvatarChildren(_) => "avatarChildren"
+      | ColorPrimary(_) => "colorPrimary"
+      | ColorSecondary(_) => "colorSecondary"
       | Label(_) => "label"
       | DeleteIcon(_) => "deleteIcon";
     let to_obj = listOfClasses =>
@@ -1734,6 +1744,8 @@ module Chip = {
                | Deletable(className)
                | Avatar(className)
                | AvatarChildren(className)
+               | ColorPrimary(className)
+               | ColorSecondary(className)
                | Label(className)
                | DeleteIcon(className) =>
                  Js.Dict.set(obj, to_string(classType), className)
@@ -1743,12 +1755,13 @@ module Chip = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Chip/Chip"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Chip"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~avatar: ReasonReact.reactElement=?,
+      ~color: string=?,
       ~className: string=?,
       ~component: 'union_8=?,
       ~deleteIcon: ReasonReact.reactElement=?,
@@ -1766,6 +1779,7 @@ module Chip = {
   let make =
       (
         ~avatar: option(ReasonReact.reactElement)=?,
+        ~color: option(color)=?,
         ~className: option(string)=?,
         ~component:
            option([ | `String(string) | `Element(ReasonReact.reactElement)])=?,
@@ -1785,6 +1799,7 @@ module Chip = {
         makeProps(
           ~avatar?,
           ~className?,
+          ~color=?Js.Option.map((. v) => colorToJs(v), color),
           ~component=?Js.Option.map((. v) => unwrapValue(v), component),
           ~deleteIcon?,
           ~label?,
@@ -1852,10 +1867,10 @@ module CircularProgress = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Progress/CircularProgress"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/CircularProgress"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~color: string=?,
@@ -1919,10 +1934,10 @@ module ClickAwayListener = {
     | [@bs.as "onTouchEnd"] `OnTouchEnd
     | [@bs.as "0"] `False
   ];
-  [@bs.module "material-ui/utils/ClickAwayListener"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ClickAwayListener"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~mouseEvent: string=?,
       ~onClickAway: ReactEvent.Mouse.t => unit,
@@ -1994,10 +2009,10 @@ module Collapse = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/transitions/Collapse"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Collapse"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~collapsedHeight: string=?,
@@ -2075,8 +2090,8 @@ module Collapse = {
 };
 
 module CssBaseline = {
-  [@bs.module "material-ui/CssBaseline/CssBaseline"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/CssBaseline"]
+  external reactClass: ReasonReact.reactClass = "default";
   let make = children =>
     ReasonReact.wrapJsForReason(~reactClass, ~props=Js.Obj.empty(), children);
 };
@@ -2106,10 +2121,10 @@ module DialogActions = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Dialog/DialogActions"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/DialogActions"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~disableActionSpacing: bool=?,
@@ -2161,15 +2176,15 @@ module DialogContentText = {
   ];
   [@bs.deriving jsConverter]
   type variant = [
-    | [@bs.as "display4"] `Display4
-    | [@bs.as "display3"] `Display3
-    | [@bs.as "display2"] `Display2
-    | [@bs.as "display1"] `Display1
-    | [@bs.as "headline"] `Headline
-    | [@bs.as "title"] `Title
-    | [@bs.as "subheading"] `Subheading
-    | [@bs.as "body2"] `Body2
-    | [@bs.as "body1"] `Body1
+    | [@bs.as "h1"] `Display4
+    | [@bs.as "h2"] `Display3
+    | [@bs.as "h3"] `Display2
+    | [@bs.as "h4"] `Display1
+    | [@bs.as "h5"] `Headline
+    | [@bs.as "h6"] `Title
+    | [@bs.as "subtitle1"] `Subheading
+    | [@bs.as "body1"] `Body2
+    | [@bs.as "body2"] `Body1
     | [@bs.as "caption"] `Caption
     | [@bs.as "button"] `Button
   ];
@@ -2194,10 +2209,10 @@ module DialogContentText = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Dialog/DialogContentText"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/DialogContentText"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~align: string=?,
@@ -2273,10 +2288,10 @@ module DialogContent = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Dialog/DialogContent"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/DialogContent"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~classes: Js.Dict.t(string)=?,
@@ -2327,10 +2342,10 @@ module DialogTitle = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Dialog/DialogTitle"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/DialogTitle"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~disableTypography: bool=?,
@@ -2414,10 +2429,10 @@ module Dialog = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Dialog/Dialog"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Dialog"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~disableBackdropClick: bool=?,
@@ -2586,10 +2601,10 @@ module Divider = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Divider/Divider"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Divider"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~absolute: bool=?,
       ~className: string=?,
@@ -2701,10 +2716,10 @@ module Drawer = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Drawer/Drawer"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Drawer"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~anchor: string=?,
       ~className: string=?,
@@ -2804,10 +2819,10 @@ module ExpansionPanelActions = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/ExpansionPanel/ExpansionPanelActions"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ExpansionPanelActions"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~classes: Js.Dict.t(string)=?,
@@ -2858,10 +2873,10 @@ module ExpansionPanelDetails = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/ExpansionPanel/ExpansionPanelDetails"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ExpansionPanelDetails"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~classes: Js.Dict.t(string)=?,
@@ -2933,15 +2948,16 @@ module ExpansionPanelSummary = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/ExpansionPanel/ExpansionPanelSummary"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ExpansionPanelSummary"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~disabled: bool=?,
       ~expanded: bool=?,
       ~expandIcon: ReasonReact.reactElement=?,
+      ~expandIconExpanded: ReasonReact.reactElement=?,
       ~onChange: ReactEvent.Form.t => unit=?,
       ~onClick: ReactEvent.Mouse.t => unit=?,
       ~buttonRef: ReasonReact.reactElement=?,
@@ -3069,10 +3085,10 @@ module ExpansionPanel = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/ExpansionPanel/ExpansionPanel"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ExpansionPanel"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~_CollapseProps: Js.t({..})=?,
@@ -3132,10 +3148,10 @@ module Fade = {
     enter: int,
     exit: int,
   };
-  [@bs.module "material-ui/transitions/Fade"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Fade"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~_in: bool=?,
       ~onEnter: unit => unit=?,
@@ -3213,10 +3229,10 @@ module FormControlLabel = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Form/FormControlLabel"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/FormControlLabel"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~checked: 'union_8=?,
       ~className: string=?,
@@ -3306,10 +3322,10 @@ module FormControl = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Form/FormControl"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/FormControl"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_w=?,
@@ -3388,10 +3404,10 @@ module FormGroup = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Form/FormGroup"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/FormGroup"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~row: bool=?,
@@ -3456,10 +3472,10 @@ module FormHelperText = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Form/FormHelperText"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/FormHelperText"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_8=?,
@@ -3538,10 +3554,10 @@ module FormLabel = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Form/FormLabel"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/FormLabel"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_2=?,
@@ -3642,10 +3658,10 @@ module GridListTileBar = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/GridList/GridListTileBar"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/GridListTileBar"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~actionIcon: ReasonReact.reactElement=?,
       ~actionPosition: string=?,
@@ -3722,10 +3738,10 @@ module GridListTile = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/GridList/GridListTile"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/GridListTile"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~cols: 'number_x=?,
@@ -3788,10 +3804,10 @@ module GridList = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/GridList/GridList"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/GridList"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~cellHeight: 'union_d=?,
       ~className: string=?,
@@ -4095,10 +4111,10 @@ module Grid = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Grid/Grid"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Grid"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~alignContent: string=?,
       ~alignItems: string=?,
@@ -4186,10 +4202,10 @@ module Grow = {
   };
   [@bs.deriving jsConverter]
   type timeout = [ | [@bs.as "auto"] `Auto];
-  [@bs.module "material-ui/transitions/Grow"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Grow"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~_in: bool=?,
       ~onEnter: unit => unit=?,
@@ -4263,10 +4279,10 @@ module Hidden = {
     | [@bs.as "lg"] `Lg
     | [@bs.as "xl"] `Xl
   ];
-  [@bs.module "material-ui/Hidden/Hidden"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Hidden"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~implementation: string=?,
@@ -4386,10 +4402,10 @@ module IconButton = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/IconButton/IconButton"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/IconButton"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~color: string=?,
@@ -4534,10 +4550,10 @@ module Icon = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Icon/Icon"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Icon"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~color: string=?,
@@ -4599,10 +4615,10 @@ module InputAdornment = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Input/InputAdornment"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/InputAdornment"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_o=?,
@@ -4677,10 +4693,10 @@ module InputLabel = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Input/InputLabel"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/InputLabel"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~disableAnimation: bool=?,
@@ -4800,10 +4816,10 @@ module Input = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Input/Input"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Input"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~autoComplete: string=?,
       ~autoFocus: bool=?,
@@ -5010,10 +5026,10 @@ module LinearProgress = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Progress/LinearProgress"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/LinearProgress"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~color: string=?,
@@ -5079,10 +5095,10 @@ module ListItemAvatar = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/List/ListItemAvatar"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ListItemAvatar"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~classes: Js.Dict.t(string)=?,
@@ -5133,10 +5149,10 @@ module ListItemIcon = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/List/ListItemIcon"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ListItemIcon"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~classes: Js.Dict.t(string)=?,
@@ -5187,10 +5203,10 @@ module ListItemSecondaryAction = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/List/ListItemSecondaryAction"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ListItemSecondaryAction"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~classes: Js.Dict.t(string)=?,
@@ -5256,10 +5272,10 @@ module ListItemText = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/List/ListItemText"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ListItemText"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~disableTypography: bool=?,
@@ -5349,10 +5365,10 @@ module ListItem = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/List/ListItem"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ListItem"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~button: bool=?,
       ~className: string=?,
@@ -5465,10 +5481,10 @@ module ListSubheader = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/List/ListSubheader"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/ListSubheader"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~color: string=?,
@@ -5541,10 +5557,10 @@ module List = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/List/List"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/List"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_k=?,
@@ -5611,10 +5627,10 @@ module MenuItem = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Menu/MenuItem"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/MenuItem"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_d=?,
@@ -5694,10 +5710,10 @@ module MenuItem = {
 };
 
 module MenuList = {
-  [@bs.module "material-ui/Menu/MenuList"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/MenuList"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~onBlur: ReactEvent.Focus.t => unit=?,
@@ -5791,10 +5807,10 @@ module Menu = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Menu/Menu"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Menu"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~anchorEl: Js.t({..})=?,
       ~_MenuListProps: Js.t({..})=?,
@@ -5987,10 +6003,10 @@ module MobileStepper = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/MobileStepper/MobileStepper"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/MobileStepper"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~activeStep: 'number_t=?,
       ~backButton: ReasonReact.reactElement=?,
@@ -6072,10 +6088,10 @@ module Modal = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Modal/Modal"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Modal"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~_BackdropComponent: 'union_u=?,
       ~_BackdropProps: Js.t({..})=?,
@@ -6161,10 +6177,10 @@ module Modal = {
 };
 
 module MuiThemeProvider = {
-  [@bs.module "material-ui/styles/MuiThemeProvider"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/styles/MuiThemeProvider"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~disableStylesGeneration: bool=?,
       ~sheetsManager: Js.t({..})=?,
@@ -6299,10 +6315,10 @@ module Paper = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Paper/Paper"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Paper"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_h=?,
@@ -6390,10 +6406,10 @@ module Popover = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Popover/Popover"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Popover"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~action: ReasonReact.reactElement=?,
       ~anchorEl: 'union_4=?,
@@ -6573,10 +6589,10 @@ module Popover = {
 };
 
 module Portal = {
-  [@bs.module "material-ui/Portal/Portal"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Portal"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~container: 'union_0=?,
       ~onRendered: unit => unit=?,
@@ -6612,10 +6628,10 @@ module Portal = {
 };
 
 module RadioGroup = {
-  [@bs.module "material-ui/Radio/RadioGroup"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/RadioGroup"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~name: string=?,
       ~onBlur: ReactEvent.Focus.t => unit=?,
@@ -6699,10 +6715,10 @@ module Radio = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Radio/Radio"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Radio"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~checked: 'union_7=?,
       ~checkedIcon: ReasonReact.reactElement=?,
@@ -6800,10 +6816,10 @@ module Select = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Select/Select"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Select"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~autoWidth: bool=?,
       ~displayEmpty: bool=?,
@@ -6977,10 +6993,10 @@ module Slide = {
     enter: int,
     exit: int,
   };
-  [@bs.module "material-ui/transitions/Slide"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Slide"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~direction: string=?,
       ~_in: bool=?,
@@ -7064,10 +7080,10 @@ module SnackbarContent = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Snackbar/SnackbarContent"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/SnackbarContent"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~action: ReasonReact.reactElement=?,
       ~className: string=?,
@@ -7162,10 +7178,10 @@ module Snackbar = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Snackbar/Snackbar"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Snackbar"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~action: ReasonReact.reactElement=?,
       ~anchorOrigin: 'shape_m=?,
@@ -7307,10 +7323,10 @@ module StepButton = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Stepper/StepButton"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/StepButton"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~active: bool=?,
       ~alternativeLabel: bool=?,
@@ -7468,10 +7484,10 @@ module StepContent = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Stepper/StepContent"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/StepContent"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~active: bool=?,
       ~alternativeLabel: bool=?,
@@ -7575,10 +7591,10 @@ module StepIcon = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Stepper/StepIcon"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/StepIcon"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~active: bool=?,
       ~completed: bool=?,
@@ -7682,10 +7698,10 @@ module StepLabel = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Stepper/StepLabel"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/StepLabel"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~active: bool=?,
       ~alternativeLabel: bool=?,
@@ -7778,10 +7794,10 @@ module Step = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Stepper/Step"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Step"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~active: bool=?,
       ~alternativeLabel: bool=?,
@@ -7871,10 +7887,10 @@ module Stepper = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Stepper/Stepper"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Stepper"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~activeStep: 'number_2=?,
       ~alternativeLabel: bool=?,
@@ -7975,10 +7991,10 @@ module SvgIcon = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/SvgIcon/SvgIcon"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/SvgIcon"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~color: string=?,
@@ -8038,10 +8054,10 @@ module SwipeableDrawer = {
     | [@bs.as "persistent"] `Persistent
     | [@bs.as "temporary"] `Temporary
   ];
-  [@bs.module "material-ui/SwipeableDrawer/SwipeableDrawer"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/SwipeableDrawer"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~anchor: string=?,
       ~disableBackdropTransition: bool=?,
@@ -8181,10 +8197,10 @@ module Switch = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Switch/Switch"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Switch"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~checked: 'union_v=?,
       ~checkedIcon: ReasonReact.reactElement=?,
@@ -8325,10 +8341,10 @@ module Tab = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Tabs/Tab"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Tab"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~disabled: bool=?,
@@ -8457,10 +8473,10 @@ module Tab = {
 };
 
 module TableBody = {
-  [@bs.module "material-ui/Table/TableBody"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/TableBody"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_z=?,
@@ -8552,10 +8568,10 @@ module TableCell = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Table/TableCell"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/TableCell"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_s=?,
@@ -8608,10 +8624,10 @@ module TableCell = {
 };
 
 module TableFooter = {
-  [@bs.module "material-ui/Table/TableFooter"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/TableFooter"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (~component: 'union_m=?, ~style: ReactDOMRe.style=?, unit) => _ =
     "";
   let make =
@@ -8634,10 +8650,10 @@ module TableFooter = {
 };
 
 module TableHead = {
-  [@bs.module "material-ui/Table/TableHead"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/TableHead"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_l=?,
@@ -8732,10 +8748,10 @@ module TablePagination = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Table/TablePagination"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/TablePagination"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~_Actions: 'union_r=?,
       ~backIconButtonProps: Js.t({..})=?,
@@ -8874,10 +8890,10 @@ module TableRow = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Table/TableRow"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/TableRow"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_m=?,
@@ -8955,10 +8971,10 @@ module TableSortLabel = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Table/TableSortLabel"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/TableSortLabel"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~active: bool=?,
       ~className: string=?,
@@ -9082,10 +9098,10 @@ module Table = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Table/Table"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Table"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~component: 'union_e=?,
@@ -9181,10 +9197,10 @@ module Tabs = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Tabs/Tabs"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Tabs"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~action: ReasonReact.reactElement=?,
       ~centered: bool=?,
@@ -9265,10 +9281,10 @@ module TextField = {
     | [@bs.as "dense"] `Dense
     | [@bs.as "normal"] `Normal
   ];
-  [@bs.module "material-ui/TextField/TextField"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/TextField"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~autoComplete: string=?,
       ~autoFocus: bool=?,
@@ -9419,10 +9435,10 @@ module Toolbar = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Toolbar/Toolbar"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Toolbar"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~disableGutters: bool=?,
@@ -9515,10 +9531,10 @@ module Tooltip = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Tooltip/Tooltip"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Tooltip"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~className: string=?,
       ~disableFocusListener: bool=?,
@@ -9614,30 +9630,30 @@ module Typography = {
   ];
   [@bs.deriving jsConverter]
   type variant = [
-    | [@bs.as "display4"] `Display4
-    | [@bs.as "display3"] `Display3
-    | [@bs.as "display2"] `Display2
-    | [@bs.as "display1"] `Display1
-    | [@bs.as "headline"] `Headline
-    | [@bs.as "title"] `Title
-    | [@bs.as "subheading"] `Subheading
-    | [@bs.as "body2"] `Body2
+    | [@bs.as "h1"] `H1
+    | [@bs.as "h2"] `H2
+    | [@bs.as "h3"] `H3
+    | [@bs.as "h4"] `H4
+    | [@bs.as "h5"] `H5
+    | [@bs.as "h6"] `H6
+    | [@bs.as "subtitle1"] `Subtitle1
     | [@bs.as "body1"] `Body1
+    | [@bs.as "body2"] `Body2
     | [@bs.as "caption"] `Caption
     | [@bs.as "button"] `Button
   ];
   module Classes = {
     type classesType =
       | Root(string)
-      | Display4(string)
-      | Display3(string)
-      | Display2(string)
-      | Display1(string)
-      | Headline(string)
-      | Title(string)
-      | Subheading(string)
-      | Body2(string)
+      | H1(string)
+      | H2(string)
+      | H3(string)
+      | H4(string)
+      | H5(string)
+      | H6(string)
+      | Subtitle1(string)
       | Body1(string)
+      | Body2(string)
       | Caption(string)
       | Button(string)
       | AlignLeft(string)
@@ -9656,15 +9672,15 @@ module Typography = {
     let to_string =
       fun
       | Root(_) => "root"
-      | Display4(_) => "display4"
-      | Display3(_) => "display3"
-      | Display2(_) => "display2"
-      | Display1(_) => "display1"
-      | Headline(_) => "headline"
-      | Title(_) => "title"
-      | Subheading(_) => "subheading"
-      | Body2(_) => "body2"
+      | H1(_) => "h1"
+      | H2(_) => "h2"
+      | H3(_) => "h3"
+      | H4(_) => "h4"
+      | H5(_) => "h5"
+      | H6(_) => "h6"
+      | Subtitle1(_) => "subtitle1"
       | Body1(_) => "body1"
+      | Body2(_) => "body2"
       | Caption(_) => "caption"
       | Button(_) => "button"
       | AlignLeft(_) => "alignLeft"
@@ -9686,15 +9702,15 @@ module Typography = {
              (obj, classType) => {
                switch (classType) {
                | Root(className)
-               | Display4(className)
-               | Display3(className)
-               | Display2(className)
-               | Display1(className)
-               | Headline(className)
-               | Title(className)
-               | Subheading(className)
-               | Body2(className)
+               | H1(className)
+               | H2(className)
+               | H3(className)
+               | H4(className)
+               | H5(className)
+               | H6(className)
+               | Subtitle1(className)
                | Body1(className)
+               | Body2(className)
                | Caption(className)
                | Button(className)
                | AlignLeft(className)
@@ -9716,10 +9732,10 @@ module Typography = {
            ~init=Js.Dict.empty(),
          );
   };
-  [@bs.module "material-ui/Typography/Typography"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Typography"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~align: string=?,
       ~className: string=?,
@@ -9779,10 +9795,10 @@ module Zoom = {
     enter: int,
     exit: int,
   };
-  [@bs.module "material-ui/transitions/Zoom"]
-  external reactClass : ReasonReact.reactClass = "default";
+  [@bs.module "@material-ui/core/Zoom"]
+  external reactClass: ReasonReact.reactClass = "default";
   [@bs.obj]
-  external makeProps :
+  external makeProps:
     (
       ~_in: bool=?,
       ~onEnter: unit => unit=?,
